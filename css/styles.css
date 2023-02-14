@@ -69,27 +69,27 @@ a[href^="https"] {
 }
 
 /* 4. These styles should apply to all links in the main navigation */
-main > a {
+nav > a {
   outline: 2px dashed red;
   color: #ffffff;
   text-decoration: none;
 }
 
 /* 5. These styles should apply to the main navigation link corresponding to the current page */
-nav {
+.current {
   outline: 2px dashed red;
   color: #22e781;
 }
 
 /* 6. These styles should apply to all links in the footer */
-footer > a {
+footer a {
   outline: 2px dashed red;
   color: inherit;
 }
 
 /* 7. These styles should apply to all paragraphs and all lists (please use a class selector) */
 .text,
-ul {
+.list {
   outline: 2px dashed red;
   color: #2c3f3f;
 }
@@ -109,13 +109,13 @@ ul {
 }
 
 /* 10. These styles should apply to the paragraph in the footer */
-footer > p {
+footer .text {
   outline: 2px dashed red;
   color: #ffffff;
 }
 
 /* 11. These styles should apply to all lists */
-ul {
+.list {
   outline: 2px dashed red;
   padding: 1rem 2rem;
   background: #caced2;
@@ -128,14 +128,14 @@ li {
 }
 
 /* 13. These styles should apply to all nested lists */
-ul > li {
+li > ul > li {
   outline: 2px dashed red;
   margin: 0.5rem 0 0 0;
   background-color: #f1f1f1;
 }
 
 /* 14. These styles should apply to all list items in nested lists */
-li > ul > li {
+ul > li > ul > li {
   outline: 2px dashed red;
   margin: 0;
   color: #2673bb;
